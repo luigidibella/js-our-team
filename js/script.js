@@ -36,4 +36,17 @@ const members = [
 
 for(let member of members){
   console.log(member);
+
+  output.innerHTML += `
+  
+  <div class="col d-flex justify-content-between py-3">
+        <div class="card border-0">
+        <img src="img/${member.img}" class="card-img-top" alt="${member.nome}">
+          <div class="card-body">
+            <h5 class="card-title">${member.nome}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">${member.ruolo}</h6>
+          </div>
+        </div>
+  </div>
+  `
 }
