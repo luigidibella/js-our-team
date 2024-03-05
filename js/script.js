@@ -1,7 +1,7 @@
 const output = document.querySelector(".output");
 const output2 = document.querySelector(".output2");
 
-const pizze = [
+const members = [
   {
     nome: "Wayne Barnett",
     ruolo: "Founder & CEO",
@@ -33,3 +33,7 @@ const pizze = [
     img: "barbara-ramos-graphic-designer.jpg"
   }
 ]
+
+for(let member of members){
+  console.log(member);
+}
